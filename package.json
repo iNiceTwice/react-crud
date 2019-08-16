@@ -1,9 +1,10 @@
 {
-  "name": "red-social",
+  "name": "react-crud",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start":"node src/index",
     "dev": "nodemon ./src/index",
     "webpack": "webpack --mode development --watch"
   },
@@ -30,7 +31,6 @@
     "babel-loader": "^8.0.6",
     "css-loader": "^2.1.1",
     "file-loader": "^4.0.0",
-    "morgan": "^1.9.1",
     "nodemon": "^1.19.0",
     "style-loader": "^0.23.1",
     "url-loader": "^2.0.1",

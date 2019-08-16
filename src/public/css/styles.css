@@ -1,0 +1,122 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Text|Varela+Round&display=swap');
+
+/* Default styles and bootstrap customization*/
+
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Varela Round', sans-serif !important;
+}
+
+a{
+    text-decoration: none !important;
+}
+.row{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+.btn-danger{
+    color: #fff;
+    background-color: rgb(228, 69, 87) !important;
+    border-color:rgb(228, 69, 87) !important;
+}
+/* Text */
+
+.text-white{
+    color:rgb(243,252,248) !important;
+}
+
+.font-varela{
+    font-family: 'Varela Round', sans-serif;
+}
+.font-serif{
+    font-family: 'DM Serif Text', serif;
+}
+
+/* Header */
+
+.header, .header-sub{
+    max-height: 100px !important;
+}
+.header-sub{
+    position: relative;
+    top:0;
+}
+.logo{
+    font-size: 3.7rem;
+}
+.logo-lg{
+    font-size: 5rem;
+}
+.link{
+    text-decoration: none;
+    color:white;
+    margin: 1rem;
+}
+.bg-darkblue{
+    background-color:rgb(67,51,86);
+}
+.color-pink{
+    color:rgb(228, 69, 87);
+}
+
+/* Home */
+
+.home{
+    background:linear-gradient(326deg, #5f0a87 0%, rgba(164,80,139,0.8)74%),url("../img/aerial-photography-aerial-shot-aerial-view-2310885.jpg");
+    background-position: center center;
+	background-attachment: fixed !important;
+	background-repeat:no-repeat !important;
+	background-size: cover;
+    overflow: hidden !important;
+    height: 100% !important;
+	width: 100vw;
+	position: absolute;
+	z-index: 0;
+}
+
+/* Products */
+
+.marble-bg{
+    background: url("../img/rockywall.png");
+    width: 100vw;
+    height: 100%;
+}
+.default-container{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Utilities */
+.flex-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}    
+/* Queries */
+
+@media(max-width: 450px){
+    .logo{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.0rem;
+    }
+    .logo-lg{
+        font-size: 4.5rem;
+    }
+    .header, .header-sub{
+        min-height: 110px !important;
+    }
+    .link{
+        margin:0.5rem
+    }
+    .btn-small{
+        padding: 0.25rem 0.5rem !important;
+        font-size: 0.875rem !important;
+    }
+}

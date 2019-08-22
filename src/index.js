@@ -11,10 +11,10 @@ mongoose.connect("mongodb+srv://nicetwice:nice123@cluster0-mvptq.mongodb.net/tes
     .then(data=>console.log("- Database Online -"))
     .catch(err=>console.log(err))
 
+app.use(cors())
 //middlewares
 app.use(express.urlencoded({ extended: false }))//change to true
 app.use(express.json())
-app.use(cors())
 let allowCrossDomain = function (req, res, next) {
     res.header('Access-Control-Allow-Origin', "*");
     res.header('Access-Control-Allow-Headers', "*");

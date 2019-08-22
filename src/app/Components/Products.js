@@ -4,7 +4,6 @@ import Header from "./Header";
 import PropTypes from "prop-types"
 
 const Products = ({products,reloadData}) => {
-    console.log(typeof products)
     return (
         <div className="marble-bg">
             <Header/>

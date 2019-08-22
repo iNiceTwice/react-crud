@@ -3,6 +3,7 @@ const path = require("path")
 const routes = require("./routes/routes.js")
 const app = express()
 const mongoose = require("mongoose")
+const cors = require("cors")
 //const {mongoUri} = require("../dev.js")
 
 //Connecting to DB
@@ -13,7 +14,7 @@ mongoose.connect("mongodb+srv://nicetwice:nice123@cluster0-mvptq.mongodb.net/tes
 //middlewares
 app.use(express.urlencoded({ extended: false }))//change to true
 app.use(express.json())
-
+app.use(cors())
 let allowCrossDomain = function (req, res, next) {
     res.header('Access-Control-Allow-Origin', "*");
     res.header('Access-Control-Allow-Headers', "*");

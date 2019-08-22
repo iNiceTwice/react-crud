@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"node src/index",
+    "start": "node src/index",
     "dev": "nodemon ./src/index",
     "webpack": "webpack --mode development --watch"
   },
@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "cors": "^2.8.5",
     "express": "^4.17.0",
     "mongoose": "^5.6.1",
     "prop-types": "^15.7.2",

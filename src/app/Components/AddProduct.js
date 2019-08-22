@@ -21,7 +21,7 @@ const AddProduct = ({history,reloadData}) => {
         }
 
         try{
-            fetch("http://localhost:3000/api/add",{
+            fetch("https://react-crud-products.herokuapp.com/api/add",{
                 method:"POST",
                 headers:{
                     "Accept":"application/json",

@@ -32,7 +32,7 @@ const EditProduct = (props) => {
         }
 
         try {
-            fetch(`http://localhost:3000/api/products/edit/${product._id}`, {
+            fetch(`https://react-crud-products.herokuapp.com/api/products/edit/${product._id}`, {
                 method: "PUT",
                 headers: {
                     "Accept": "application/json",

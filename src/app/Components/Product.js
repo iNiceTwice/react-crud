@@ -26,7 +26,7 @@ const Product = ({id, name, price, reloadData}) => {
                     
                 )
                 try {
-                    fetch(`http://localhost:3000/api/delete/${id}`, {
+                    fetch(`https://react-crud-products.herokuapp.com/api/delete/${id}`, {
                         method: "DELETE",
                         headers: {
                             "Accept": "application/json",

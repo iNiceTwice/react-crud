@@ -16,7 +16,7 @@ const App = () => {
     //consult API
     const getProducts = () => {
         if (reloadData) {
-            fetch("http://localhost:3000/api/products")
+            fetch("https://react-crud-products.herokuapp.com/api/products")
                 .then(data => data.json())
                 .then(data => {
                     setProducts(data)

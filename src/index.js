@@ -14,6 +14,13 @@ mongoose.connect("mongodb+srv://nicetwice:nice123@cluster0-mvptq.mongodb.net/tes
 app.use(express.urlencoded({ extended: false }))//change to true
 app.use(express.json())
 
+let allowCrossDomain = function (req, res, next) {
+    res.header('Access-Control-Allow-Origin', "*");
+    res.header('Access-Control-Allow-Headers', "*");
+    next();
+}
+app.use(allowCrossDomain);
+
 //static files
 app.use(express.static(path.join(__dirname,"public")))
 

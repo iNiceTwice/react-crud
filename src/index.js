@@ -3,7 +3,7 @@ const path = require("path")
 const routes = require("./routes/routes.js")
 const app = express()
 const mongoose = require("mongoose")
-//const {mongoUri} = require("../dev.js")
+const {mongoUri} = require("../dev.js")
 
 //Connecting to DB
 mongoose.connect("mongodb+srv://nicetwice:nice123@cluster0-mvptq.mongodb.net/test?retryWrites=true", { useNewUrlParser: true })

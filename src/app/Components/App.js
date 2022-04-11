@@ -45,7 +45,7 @@ const App = () => {
                         reloadData={setReloadData}
                     />
                 )} />
-                <Route exact path="/products/edit/:id" render={props=>{
+                <Route exact path="/products/edit/:id" render={ props => {
                     let productID = props.match.params.id 
                     let product = products.filter(product=> product._id === productID)
                     return (

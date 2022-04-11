@@ -63,7 +63,7 @@ const AddProduct = ({history,reloadData}) => {
                         <div className="form-group">
                             <label>Introduzca el nombre</label>
                             <input 
-                                onChange={e => {setName  (e.target.value)}}
+                                onChange={e => {setName(e.target.value)}}
                                 type="text" 
                                 className="form-control" placeholder="Ejemplo: Televisor"
                             />

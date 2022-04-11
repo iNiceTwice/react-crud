@@ -17,7 +17,7 @@ router.post("/api/add", async (req,res)=>{
             if (!onlyNumbers.test(req.body.price)){
                 res.status(400).send({
                     status: "400",
-                    message: "Bad request, make sure you put only numbers there."
+                    message: "Bad request, make sure you only put numbers there."
                 })
             } 
         }
